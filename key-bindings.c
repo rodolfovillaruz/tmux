@@ -428,6 +428,7 @@ key_bindings_init(void)
 		"bind -N 'Create a new window' c { new-window }",
 		"bind -N 'Detach the current client' d { detach-client }",
 		"bind -N 'Search for a pane' f { command-prompt { find-window -Z -- '%%' } }",
+		"bind -N 'Toggle the status line' h { set-option status }",
 		"bind -N 'Display window information' i { display-message }",
 		"bind -N 'Select the previously current window' l { last-window }",
 		"bind -N 'Toggle the marked pane' m { select-pane -m }",

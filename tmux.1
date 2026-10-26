@@ -332,6 +332,8 @@ Create a new window.
 Detach the current client.
 .It f
 Prompt to search for text in open windows.
+.It h
+Toggle the status line on and off.
 .It i
 Display some information about the current window.
 .It l
@@ -5752,6 +5754,8 @@ gives a status line one row in height;
 or
 .Cm 5
 more rows.
+The default is
+.Cm off .
 .It Ic status\-format[] Ar format
 Specify the format to be used for each line of the status line.
 The default first status line is built from the various individual status
@@ -8154,8 +8158,9 @@ shows hidden variables (omitted by default).
 includes an optional status line which is displayed in the bottom line of each
 terminal.
 .Pp
-By default, the status line is enabled and one line in height (it may be
-disabled or made multiple lines with the
+By default, the status line is disabled (it may be enabled, toggled with
+.Ql C-b h ,
+or made multiple lines with the
 .Ic status
 session option) and contains, from left-to-right: the name of the current
 session in square brackets; the window list; the title of the active pane
